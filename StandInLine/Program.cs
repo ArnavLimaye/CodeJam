@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Codejam
+/*namespace Codejam
 {
     class StandInLine
     {
@@ -130,4 +130,69 @@ namespace Codejam
         }
         #endregion
     }
+}*/
+
+namespace Codejam
+{
+    class StandInLine
+    {
+        int[] Reconstruct(int[] left)
+        {
+            int[] final = new int[left.Length];
+            int counter = 1;
+            for (int i = 0; i < final.Length; i++)
+            {
+                final[i] = i + 1;
+            }
+            for (int i = 0; i < final.Length; i++)
+            {
+                FindPlace(final,left[i],counter);
+                counter++;
+            }
+            
+            //Your code goes here
+            return final;
+        }
+
+        private void FindPlace(int[] final, int mustswaps,int counter)
+        {
+            int current = counter;
+            int noofswaps=0;
+            for (int i = 0; i < final.Length; i++)
+            {
+                Swap(final, i,current,ref noofswaps);
+                if (noofswaps == mustswaps)
+                    break;
+            }
+        }
+
+        private void Swap(int[] final, int i,int current,ref int noofswaps)
+        {
+            int temp;
+            int pos = Array.IndexOf(final, current);
+            if (current < final[i])
+            {
+                temp = current;
+                final[pos] = final[i];
+                final[i] = current;
+                noofswaps++;
+            }
+        }
+        
+
+        #region Testing code Do not change
+        public static void Main(String[] args)
+        {
+            String input = Console.ReadLine();
+            StandInLine standInLine = new StandInLine();
+            do
+            {
+                int[] left = Array.ConvertAll<string, int>(input.Split(','), delegate(string s) { return Int32.Parse(s); });
+                Console.WriteLine(string.Join(",", Array.ConvertAll<int, string>(standInLine.Reconstruct(left), delegate(int s) { return s.ToString(); })));
+                input = Console.ReadLine();
+            } while (input != "-1");
+        }
+        #endregion
+    }
 }
+
