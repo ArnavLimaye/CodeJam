@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandInLine", "StandInLine\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendScore", "FriendScore\FriendScore.csproj", "{BE403334-2764-4AE7-B4EE-A421FD5E759C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexStringWriter", "LexStringWriter\LexStringWriter.csproj", "{FA337B54-8840-4888-8118-0FA8CA8F9B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoPointSegment", "NoPointSegment\NoPointSegment.csproj", "{BC9052F0-9282-4457-B026-94C1C7CB5CED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{BE403334-2764-4AE7-B4EE-A421FD5E759C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE403334-2764-4AE7-B4EE-A421FD5E759C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE403334-2764-4AE7-B4EE-A421FD5E759C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA337B54-8840-4888-8118-0FA8CA8F9B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA337B54-8840-4888-8118-0FA8CA8F9B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA337B54-8840-4888-8118-0FA8CA8F9B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA337B54-8840-4888-8118-0FA8CA8F9B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9052F0-9282-4457-B026-94C1C7CB5CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9052F0-9282-4457-B026-94C1C7CB5CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9052F0-9282-4457-B026-94C1C7CB5CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9052F0-9282-4457-B026-94C1C7CB5CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
